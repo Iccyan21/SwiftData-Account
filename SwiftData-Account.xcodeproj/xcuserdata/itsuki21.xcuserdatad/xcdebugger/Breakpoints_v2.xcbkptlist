@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D917A5A6-BA64-43C0-ADB6-8B0EDBBC1B9C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "582329A4-8CA6-449F-B61D-2AD669647486"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftData-Account/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8115C616-3A63-45C0-91C4-4E161D9084FB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../../var/folders/bj/vktnzy410rsctz31vp8vpv8c0000gn/T/swift-generated-sources/@__swiftmacro_17SwiftData_Account0C05ModelfMm_.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1"
+            endingLineNumber = "1"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "8115C616-3A63-45C0-91C4-4E161D9084FB - 518baea825a91839"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftData_Account.Account.init(name: Swift.String, first_name: Swift.String, comment: Swift.String) -&gt; SwiftData_Account.Account"
+                  moduleName = "SwiftData-Account"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///var/folders/bj/vktnzy410rsctz31vp8vpv8c0000gn/T/swift-generated-sources/@__swiftmacro_17SwiftData_Account0C05ModelfMm_.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2"
+                  endingLineNumber = "2"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "8115C616-3A63-45C0-91C4-4E161D9084FB - f2e77799410f2ed1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftData_Account.Account.init(name: Swift.String) -&gt; SwiftData_Account.Account"
+                  moduleName = "SwiftData-Account"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///var/folders/bj/vktnzy410rsctz31vp8vpv8c0000gn/T/swift-generated-sources/@__swiftmacro_17SwiftData_Account0C05ModelfMm_.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "2"
+                  endingLineNumber = "2"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
