@@ -12,12 +12,12 @@ import SwiftData
 class Account {
     var name: String
     var first_name: String
-    //var comment: String
+    var comment: String
     // 新しいAccountオブジェクトを作成する際に必要な情報を引数として受け取る
-    init(name: String,first_name: String) {
+    init(name: String,first_name: String,comment:String) {
         self.name = name
         self.first_name = first_name
-        //self.comment = comment
+        self.comment = comment
     }
 }
 

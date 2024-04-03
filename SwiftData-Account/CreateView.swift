@@ -15,15 +15,15 @@ struct CreateView: View {
     @Environment(\.dismiss) var dismiss
     @State private var name = ""
     @State private var first_name = ""
-    //@State private var comment = ""
+    @State private var comment = ""
     var body: some View {
         NavigationStack{
             Form{
                 TextField("ユーザー名",text: $name)
                 TextField("ファーストネーム",text: $first_name)
-                //TextField("コメント",text: $comment)
+                TextField("コメント",text: $comment)
                 Button("作成"){
-                    let createAccount = Account(name: name,first_name: first_name)
+                    let createAccount = Account(name: name,first_name: first_name,comment: comment)
                     context.insert(createAccount)
                     dismiss()
                 }
