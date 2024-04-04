@@ -24,14 +24,18 @@ struct ContentView: View {
                 } else {
                     List {
                         ForEach(accounts) { account in
-                            VStack(alignment: .leading) {
-                                Text(account.name)
-                                    .font(.title)
-                                Text(account.first_name)
-                                    .font(.subheadline)
-                                Text(account.comment)
-                                    .font(.caption)
-                                
+                            NavigationLink{
+                                // タイトルと紐付けしてとる？？
+                                EditView(account: account)
+                            } label: {
+                                VStack(alignment: .leading) {
+                                    Text(account.name)
+                                        .font(.title)
+                                    Text(account.first_name)
+                                        .font(.subheadline)
+                                    Text(account.comment)
+                                        .font(.caption)
+                                }
                             }
                         }
                         // スライドしたら削除

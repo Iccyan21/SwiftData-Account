@@ -13,7 +13,7 @@
 		471E47752BBAE51B008B0AE7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 471E47742BBAE51B008B0AE7 /* Preview Assets.xcassets */; };
 		471E477E2BBAE743008B0AE7 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E477D2BBAE743008B0AE7 /* Account.swift */; };
 		471E47802BBAE90F008B0AE7 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E477F2BBAE90F008B0AE7 /* CreateView.swift */; };
-		471E47822BBAEB76008B0AE7 /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E47812BBAEB76008B0AE7 /* ReadView.swift */; };
+		471E47842BBECF3A008B0AE7 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471E47832BBECF3A008B0AE7 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +24,7 @@
 		471E47742BBAE51B008B0AE7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		471E477D2BBAE743008B0AE7 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		471E477F2BBAE90F008B0AE7 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
-		471E47812BBAEB76008B0AE7 /* ReadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
+		471E47832BBECF3A008B0AE7 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +59,8 @@
 			children = (
 				471E476D2BBAE519008B0AE7 /* SwiftData_AccountApp.swift */,
 				471E476F2BBAE519008B0AE7 /* ContentView.swift */,
+				471E47832BBECF3A008B0AE7 /* EditView.swift */,
 				471E477F2BBAE90F008B0AE7 /* CreateView.swift */,
-				471E47812BBAEB76008B0AE7 /* ReadView.swift */,
 				471E47712BBAE51B008B0AE7 /* Assets.xcassets */,
 				471E47732BBAE51B008B0AE7 /* Preview Content */,
 				471E477D2BBAE743008B0AE7 /* Account.swift */,
@@ -147,8 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				471E47702BBAE519008B0AE7 /* ContentView.swift in Sources */,
+				471E47842BBECF3A008B0AE7 /* EditView.swift in Sources */,
 				471E476E2BBAE519008B0AE7 /* SwiftData_AccountApp.swift in Sources */,
-				471E47822BBAEB76008B0AE7 /* ReadView.swift in Sources */,
 				471E47802BBAE90F008B0AE7 /* CreateView.swift in Sources */,
 				471E477E2BBAE743008B0AE7 /* Account.swift in Sources */,
 			);
