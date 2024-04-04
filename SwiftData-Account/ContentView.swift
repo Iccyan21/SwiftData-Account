@@ -13,49 +13,37 @@ struct ContentView: View {
     @Environment(\.modelContext) private var context
     // データーベースからAccountオブジェクトの名前をタイトルでソートして取得
     @Query (sort: \Account.name) private var accounts: [Account]
+    @State private var createNewBook = false
     var body: some View {
-        VStack {
+        VStack{
             NavigationStack{
-                Group{
-                    if accounts.isEmpty {
-                        NavigationLink(destination: CreateView()) {
-                            Text("アカウントを登録しよう")
-                        }
-                    } else {
-                        List{
-                            ForEach(accounts){ account in
-                                NavigationLink{
-                                    // タイトルと紐付けしてとる？？
-                                    ReadView()
-                                } label: {
-                                    HStack(spacing: 10){
-                                        VStack(alignment: .leading){
-                                            Text(account.name).font(.title2)
-                                            Text(account.first_name).foregroundStyle(.secondary)
-                                            if let rating = account.rating {
-                                                HStack{
-                                                    ForEach(0..<rating, id:\.self){
-                                                        _ in
-                                                        Image(systemName: "star.fill")
-                                                            .imageScale(.small)
-                                                            .foregroundStyle(.yellow)
-                                                    }
-                                                }
-                                                
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            // スライドしたら削除
-                            .onDelete { IndexSet in
-                                IndexSet.forEach { index in
-                                    let account = accounts[index]
-                                    context.delete(account)
-                                }
+                if accounts.isEmpty {
+                    NavigationLink(destination: CreateView()) {
+                        Text("アカウントを登録しよう")
+                    }
+                } else {
+                    List {
+                        ForEach(accounts) { account in
+                            VStack(alignment: .leading) {
+                                Text(account.name)
+                                    .font(.title)
+                                Text(account.first_name)
+                                    .font(.subheadline)
+                                Text(account.comment)
+                                    .font(.caption)
+                                
                             }
                         }
-                        .listStyle(.plain)
+                        // スライドしたら削除
+                        .onDelete { IndexSet in
+                            IndexSet.forEach { index in
+                                let account = accounts[index]
+                                context.delete(account)
+                            }
+                        }
+                    }
+                    NavigationLink(destination: CreateView()) {
+                        Text("アカウントを登録しよう")
                     }
                 }
             }
